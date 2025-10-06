@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+/* Cards, surface, and buttons tuned for brand #102a5e */
+.surface { @apply bg-brand-800/60 border border-white/10 rounded-2xl p-5; }
+.btn { @apply bg-brand-700 hover:bg-brand-600 active:scale-[.99] transition font-semibold px-4 py-2 rounded-xl; }
+.header { @apply sticky top-0 z-10 backdrop-blur bg-brand-900/80 border-b border-white/10; }
+.container { @apply max-w-6xl mx-auto px-4; }
+.grid-clips { @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3; }
+.pill { @apply bg-brand-700/70 px-2.5 py-1 rounded-full text-xs mr-2; }
+.muted { @apply text-white/80 text-sm; }
